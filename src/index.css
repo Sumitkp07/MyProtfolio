@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --purpleBtn1: #983cec;
+  --purpleBtn2: #b26cf6;
+  --icons: #d174ff;
+  --headings :#D8B4FE;
+  --PurpleText: #6614b3;
+  --capsule: #e9d5ff;
+  --gradient1: #4889da;
+  --gradient2: #8266e8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------ wrapper ------ */
+.wrapper{
+  width:68%;
+  float: right;
+  margin-left:2vw;
+  margin-right:2vw;
+}
+
+/* -------- Navbar ------- */
+.navlist>li,
+.about-btn>li{
+  border: 1px solid rgba(128, 128, 128, 0.774);
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.navlist>li::after,
+.about-btn>li::after{
+  position: absolute;
+  content: '';
+  background-color: var(--icons);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  border-radius:50%;
+  transition: all .2s linear;
+}
+.about-btn::after{
+  background: linear-gradient(
+    90deg,
+    var(--purpleBtn2) 0%,
+    var(--purpleBtn2) 35%,
+    var(--purpleBtn1) 90%
+  );
+}
+.navlist>li:hover::after,
+.about-btn>li:hover::after,
+#details-btn:hover::after{
+  bottom: 0;
+  border-radius: 0;
+}
+.navlist>li>a,
+.about-btn>li>a{
+  color: #ffff;
+  position: relative;
+  z-index: 1;
+}
+/* -------- about ------- */
+.social-icons .icons {
+  background-color: var(--icons);
+}
+.sidebar-btn,.gradient {
+  background: linear-gradient(
+    90deg,
+    var(--purpleBtn2) 0%,
+    var(--purpleBtn2) 35%,
+    var(--purpleBtn1) 90%
+  );
+}
+
+/* ------ about end ------ */
+
+/*  ---- projects ----- */
+#details-btn{
+  overflow: hidden;
+  position: relative;
+}
+#details-btn::after{
+  position: absolute;
+  content: '';
+  background-color: #ffff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  border-radius:80%;
+  transition: all .2s linear;
+}
+#details-btn{
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#details-btn>a{
+  position: relative;
+  z-index: 1;
+}
+#details-btn:hover a{
+color: #000;
+}
+/*---- login.css --------- */
+
