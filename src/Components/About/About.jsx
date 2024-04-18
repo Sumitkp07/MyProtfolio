@@ -1,10 +1,11 @@
 import React from "react";
 
+
 export const About = () => {
   return (
     <>
       <section>
-        <div className="wrapper h-[90vh] pt-7">
+        <div className="wrapper h-[90vh] lg:mt-[23vh]">
           <div className="about-content w-[78%]">
           <h1 className="text-6xl font-extrabold uppercase text-[var(--headings)] mt-[11.5vh] mb-[4vh]">about myself</h1>
           <p className="text-white text-lg mb-1">"live the life as you want"</p>
@@ -12,7 +13,7 @@ export const About = () => {
           <h2 className="text-lg font-medium text-white mt-2.5 mb-1 tracking-wide underline">
             I DEVELOP USER INTERFACES,RESPONSIVE DESIGNS AND WEB APPLICATIONS
           </h2>
-          <p className="text-white mb-8">
+          <p className="text-white mb-8 w-[90%]">
             A passionate and hard-working frontend developer seeks a
             entry-level position with a reputed IT company to practice web
             development and set a new quality benchmark. Dependable candidate
@@ -21,7 +22,7 @@ export const About = () => {
             expand my expertise
           </p>
           <ul className="about-btn flex gap-x-4">
-          <li><a href="">Check Resume <i className="fa-solid fa-arrow-right item-center"></i> </a></li>
+          <li><a href="./image/resume.pdf" download="resume">Check Resume <i className="fa-solid fa-arrow-right item-center"></i> </a></li>
           <li><a href="">workred on 10+ projects</a></li>
           </ul>
           </div>

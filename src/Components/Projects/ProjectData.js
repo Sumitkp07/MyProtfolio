@@ -55,4 +55,4 @@ export const ProjectData = [
         lang3 : "Javascript",
         lang4 : "Bootstrap"
     }
-]
+];

@@ -2,52 +2,57 @@ import React from 'react';
 
 export const SkillsData = [
     {
-        skill : "HTML",
+        skill : "Html5",
         percentage :  "95%",
         image : './image/logo1.png'
     },
     {
-        skill : "CSS",
+        skill : "Css3",
         percentage :  "95%",
         image : './image/logo2.png'
     },
     {
-        skill : "JAVASCRIPT",
+        skill : "Javascript",
         percentage :  "80%",
         image : './image/logo3.webp'
     },
     {
-        skill : "REACT JS",
+        skill : "React Js",
         percentage :  "75%",
         image : './image/logo5.webp'
     },
     {
-        skill : "TAILWIND",
+        skill : "Tailwind",
         percentage :  "98%",
         image : './image/logo4.webp'
     },
     {
-        skill : "BOOTSTRAP",
+        skill : "Bootstrap",
         percentage :  "95%",
-        image : './image/logo1.png'
+        image : './image/bootstrap.png'
     },
     {
-        skill : "REDUX",
+        skill : "Redux",
         percentage :  "learning",
         image : './image/logo6.png'
     },
     {
-        skill : "FIGMA",
+        skill : "Figma",
         percentage :  "70%",
         image : './image/logo7.png'
     },
     {
-        skill : "GITHUB",
+        skill : "Sass",
+        percentage :  "learning",
+        image : './image/logo10.svg'
+    },
+    {
+        skill : "Github",
         percentage :  "70%",
         image : './image/logo8.png'
     },
     {
-        skill : "GIT",
+        skill : "Git",
         percentage :  "70%",
         image : './image/logo9.png'
     },
