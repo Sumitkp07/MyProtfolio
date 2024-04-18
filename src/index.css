@@ -2,12 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.light-theme {
+  background-color: #efeae3;
+  --headings: #5b0daf;
+  --textclr : #000;
+  --PurpleText: #8242d6;
   --purpleBtn1: #983cec;
   --purpleBtn2: #b26cf6;
   --icons: #d174ff;
+  --capsule: #e9d5ff;
+  --gradient1: #4889da;
+  --gradient2: #8242d6;
+}
+.dark-theme{
+  background-color: black;
   --headings: #d8b4fe;
+  --textclr :#fff;
   --PurpleText: #6614b3;
+  --purpleBtn1: #983cec;
+  --purpleBtn2: #b26cf6;
+  --icons: #d174ff;
   --capsule: #e9d5ff;
   --gradient1: #4889da;
   --gradient2: #8242d6;
@@ -16,7 +30,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 /* ------ wrapper ------ */
 .wrapper {
@@ -26,6 +39,21 @@
   margin-right: 2vw;
 }
 
+.mode{
+  padding: 8px;
+}
+.topArrow{
+  padding: 5px;
+  animation: arrow 1.2s infinite alternate-reverse linear;
+}
+@keyframes arrow {
+  0%{
+    transform: translateY(0.2rem);
+  }
+  100%{
+    transform: translateY(-0.2rem);
+  }
+}
 /* -------- Navbar ------- */
 .navlist > li,
 .about-btn > li {
@@ -64,15 +92,12 @@
 }
 .navlist > li > a,
 .about-btn > li > a {
-  color: #ffff;
+  color: var(--textclr);
   position: relative;
   z-index: 1;
 }
 /* -------- about ------- */
-.social-icons .icons {
-  transition: all 0.2s linear;
-  background-color: var(--icons);
-}
+
 .sidebar-btn,
 .gradient {
   background: linear-gradient(
@@ -111,8 +136,12 @@
   color: #000;
 }
 /*---- icons --------- */
-.social-icons > a:hover {
+.social-icons .icons {
+  transition: all 0.2s linear;
   background-color: var(--gradient2);
+}
+.social-icons > a:hover {
+  background-color:black ;
   transform: scale(1.1);
 }
 

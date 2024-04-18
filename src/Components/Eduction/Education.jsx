@@ -4,9 +4,8 @@ import { sociaData } from './sociaData';
 
 export const Education = () => {
   return (
-    <section>
-      {/* <div className="wrapper h-[90vh] "> </div> */}
-        <div className="wrapper socials my-[15vh]">
+    <section >
+        <div id="social" className="wrapper socials my-[15vh]">
         <h1 className="text-5xl font-extrabold uppercase text-[var(--headings)] pb-5 ">social links</h1>
         <div  class="grid gap-4 grid-cols-2 lg:grid-cols-4">
         {

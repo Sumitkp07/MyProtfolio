@@ -3,8 +3,8 @@ import { SkillsData } from './SkillsData';
 
 export const Skills = () => {
   return (
-    <section id='skill'>
-      <div className="wrapper h-[90vh]">
+    <section >
+      <div id="skill" className="wrapper h-[90vh]">
         <div className="skill-content">
         <h1 className="text-7xl font-extrabold uppercase text-[var(--headings)] border-b-2 pb-5 border-[var(--capsule)]">my skills</h1>
         .<div className="grid grid-cols-2 lg:gap-6 gap-3 lg:justify-between md:grid-cols-2 xl:grid-cols-4">

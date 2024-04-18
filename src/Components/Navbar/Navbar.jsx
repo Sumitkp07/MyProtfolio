@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 
 export const Navbar = () => {
 
@@ -6,18 +7,26 @@ export const Navbar = () => {
   useEffect(()=>{
     setshowMenu(showMenu)
   },[setshowMenu])
-
-
   return (
     <>
     <div className="wrapper lg:mt-[5vh] fixed top-0 right-0 mx-9 z-50">
     <nav>
       <ul className='navlist flex gap-x-8 items-center justify-end lg:bg-none'>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Login</a></li>
+        <li>
+        <Link to="about" spy={true} smooth={true}  offset={-100} duration={500}>About</Link>
+        </li>
+        <li>
+        <Link to="skill" spy={true}  smooth={true} offset={-100} duration={500}>Skills</Link>
+        </li>
+        <li>
+        <Link to="project" spy={true}  smooth={true} offset={-100} duration={500}>Projects</Link>
+        </li>
+        <li>
+        <Link to="social" spy={true}  smooth={true} offset={-100} duration={500}>Education</Link>
+        </li>
+        <li>
+        <Link to="login" spy={true}  smooth={true} offset={-100} duration={500}>Login</Link>
+        </li>
       </ul>
     </nav>
 
@@ -47,4 +56,3 @@ export const Navbar = () => {
     </>
   );
 }
-

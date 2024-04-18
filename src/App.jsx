@@ -9,13 +9,12 @@ import {Login} from './Components/login/Login';
 import {Education} from './Components/Eduction/Education';
 import {Footer} from './Components/footer/Footer';
 
-
 function App() {
 
   return (
     <>
-    <Sidebar />
     <Navbar />
+    <Sidebar />
     <About />
     <Skills />
     <Projects />

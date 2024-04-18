@@ -4,8 +4,8 @@ import { ProjectData } from './ProjectData';
 
 export const Projects = () => {
   return (
-    <section>
-      <div className="wrapper min-h-[100vh]">
+    <section >
+      <div id="project" className="wrapper min-h-[100vh]">
       <h1 className="text-7xl font-extrabold uppercase text-[var(--headings)] border-b-2 pb-5 border-[var(--capsule)]">check out <br /> my projects work</h1>
       <div className="project-cards grid lg:grid-cols-3 lg:gap-6 gap-3 md:grid-cols-2 mt-7">
         {
