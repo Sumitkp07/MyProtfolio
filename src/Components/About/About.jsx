@@ -22,11 +22,11 @@ export const About = () => {
           <div className="about-content w-[78%]">
           <h1  data-aos="zoom-in" className="text-6xl font-extrabold uppercase text-[var(--headings)] mt-[11.5vh]">about myself</h1>
           <p className="text-[var(--textclr)] text-lg mb-2 mt-1.5">"live the life as you want"</p>
-          <h1  data-aos="zoom-in" className="text-[var(--subheading)] text-4xl font-bold capitalize">frontend developer 🎃</h1>
+          <h1  data-aos="zoom-in" className="title text-[var(--subheading)] text-4xl font-bold capitalize">frontend developer 🎃</h1>
           <h2  data-aos="zoom-in" className="text-lg font-semibold text-[var(--textclr)] mt-2.5 mb-1 tracking-wide underline">
             I DEVELOP USER INTERFACES, RESPONSIVE DESIGNS AND WEB APPLICATIONS
           </h2>
-          <p  data-aos="zoom-in" className="text-[var(--paragraph)] font-medium text-[16px] mb-8 w-[90%]">
+          <p  data-aos="zoom-in" className=" para text-[var(--paragraph)] font-medium text-[16px] mb-8 w-[90%]">
             A passionate and hard-working frontend developer seeks a
             entry-level position with a reputed IT company to practice web
             development and set a new quality benchmark. Dependable candidate

@@ -87,7 +87,7 @@
 }
 /* ---------- Navbar & About ----------- */
 .menubar{
-  display:block;
+  display:none;
 }
 #myNav{
   transition: all .5s linear ;
@@ -397,6 +397,10 @@ transition: all .3s linear;
   .content{
     width: 50%;
   }
+  .content h1{
+    font-size: 2.2rem;
+    text-align: center;
+  }
   /* ---- about content ------- */
   .about-content p{
     width: 90%;
@@ -441,7 +445,53 @@ transition: all .3s linear;
   /* ---------------- 768px end -------------------------- */
 
 @media screen and (max-width: 576px){
-
+  .content h1{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .content h4{
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .about-content h1{
+    font-size: 3rem;
+  }
+  .about-content h1.title{
+    font-size: 1.8rem;
+  }
+  .about-content p{
+    margin-bottom: 1px;
+  }
+  p.para{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 5vh;
+  }
+  #skill h1,
+  #social h1,
+  #project h1{
+    font-size: 3rem;
+  }
+  #social-content{
+    margin-top:2px;
+  }
+  #hire-btn{
+    margin-top: 0;
+  }
+  #footer{
+    height: 60vh;
+  }
+  #footer p{
+    width: 100%;
+  }
+  #footer h1{
+    font-size: 2.8rem;
+  }
+  .footer-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
   /* ---------------- 576px end -------------------------- */
 

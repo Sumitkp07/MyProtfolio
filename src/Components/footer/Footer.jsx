@@ -37,7 +37,7 @@ export const Footer = () => {
 
   return (
     <section>
-      <div className="wrapper h-[40vh] ">
+      <div id="footer" className="wrapper h-[40vh] ">
         <h1  data-aos="fade-up" className="text-[var(--textclr)] text-5xl font-extrabold capitalize text-center">
           create your <span className="text-purple-400">digital presence</span>{" "}
           with me

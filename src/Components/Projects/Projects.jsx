@@ -22,7 +22,7 @@ export const Projects = () => {
         {
           ProjectData.map((elem, index)=>{
          return <div key={index} data-aos="zoom-in" className="card bg-[var(--cardbg)] h-full w-full rounded-[20px] p-5 duration-200 hover:-translate-y-2 z-10">
-          <div className="img h-44 h-[250px] w-full overflow-hidden rounded-lg">
+          <div className="img h-44 w-full overflow-hidden rounded-lg">
           <img 
           src={elem.img} 
           alt="project-img" 
