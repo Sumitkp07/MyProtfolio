@@ -25,16 +25,16 @@ export const Sidebar = () => {
 
   return (
     <>
-      <section id="slidebar" className="h-[100vh] lg:w-[28%] lg:fixed border-r-4 border-[#D8B4FE]">
+      <section id="slidebar" className="h-[100vh] lg:w-[28%] xl:fixed border-r-4 border-[#D8B4FE]">
         <div className="content mx-auto my-7 w-[85%] h-[95%]">
           <div className="divcard w-[100%] h-[40%]">
-          <h1 className="text-[var(--textclr)] font-sans uppercase font-extrabold tracking-[2px] mb-2 md:mx-auto md:text-center text-5xl">
+          <h1 className="text-[var(--textclr)] font-sans uppercase font-extrabold tracking-[2px] mb-2 md:mx-auto md:text-center text-4xl">
             sumit kumar
           </h1>
             <img
               src="./image/cover.jpg"
               alt="img"
-              className="w-[400px] h-[300px] object-cover bg-center rounded-lg mx-auto"
+              className=" object-cover bg-center rounded-lg mx-auto"
             />
             <h4 className="w-full lg:text-xs font-bold text-[var(--textclr)] my-4 lg:tracking-wide md:text-sm">
               I DEVELOP USER INTERFACES,RESPONSIVE DESIGNS AND WEB APPLICATIONS.

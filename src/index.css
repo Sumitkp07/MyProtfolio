@@ -141,7 +141,10 @@
 }
 
 /* ---------- slidebar btn ----------- */
-
+.content img{
+  height: 265px;
+  width: 300px;
+}
 .sidebar-btn,
 .gradient {
   background:var(--lineargrdient)
@@ -318,17 +321,30 @@ transition: all .3s linear;
 
 
 /* ============= responsive ===============*/
+@media (max-width: 1025px) {
+  #navbar{
+    display: none;
+  }
+    .menubar{
+      display: block;
+    }
+    .wrapper{
+      width: 90%;
+      margin: auto;
+      float: none;
+      
+    }
+}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px){
   
   /* ------------ top content & root content --------- */
 
-  #navbar, 
-  .navlist{
-    display: none;
-  }
+#navbar{
+  display: none;
+}
   .menubar{
-    display: none;
+    display: block;
   }
   .wrapper{
     width: 90%;
@@ -394,8 +410,12 @@ transition: all .3s linear;
 
 
 @media screen and (max-width: 768px){
+.content img{
+  height: 300px;
+  width: 400px;
+}
   .content{
-    width: 50%;
+    width: 70%;
   }
   .content h1{
     font-size: 2.2rem;
