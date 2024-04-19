@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ProjectData } from './ProjectData';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 
 export const Projects = () => {
+
+  useEffect(()=>{
+    Aos.init({
+      offset: 200,
+      duration: 500,
+      easing: "ease-in-sine",
+      delay: 50,
+    });
+  })
   return (
     <section >
       <div id="project" className="wrapper min-h-[100vh]">
-      <h1 className="text-7xl font-extrabold uppercase text-[var(--headings)] border-b-2 pb-5 border-[var(--capsule)]">check out <br /> my projects work</h1>
-      <div className="project-cards grid lg:grid-cols-3 lg:gap-6 gap-3 md:grid-cols-2 mt-7">
+      <h1 data-aos="fade-up" className="text-7xl font-extrabold uppercase text-[var(--headings)] border-b-2 pb-5 border-[var(--border)]">check out <br /> my projects work</h1>
+      <div className="project-cards grid lg:grid-cols-3 lg:gap-6 gap-8 md:grid-cols-2 mt-[10vh]">
         {
           ProjectData.map((elem, index)=>{
-         return <div key={index} className="card bg-white h-full w-full rounded-[20px] p-5 duration-200 hover:-translate-y-2 z-10">
-          <div className="img lg:h-44 md:h-[250px] w-full overflow-hidden rounded-lg">
+         return <div key={index} data-aos="zoom-in" className="card bg-[var(--cardbg)] h-full w-full rounded-[20px] p-5 duration-200 hover:-translate-y-2 z-10">
+          <div className="img h-44 h-[250px] w-full overflow-hidden rounded-lg">
           <img 
           src={elem.img} 
           alt="project-img" 
@@ -26,10 +37,12 @@ export const Projects = () => {
               <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-100 px-2 py-0.5 my-1 text-xs text-purple-600">{elem.lang3}</h5>
               <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-100 px-2 py-0.5 my-1 text-xs text-purple-600">{elem.lang4}</h5>
             </div>
-            <h4 id='details-btn' className='px-8 py-2 rounded-[8px] border-2 border-black bg-zinc-950  capitalize text-center my-6'><a onClick={()=>{
+            <h4 id='details-btn'
+            onClick={()=>{
               alert('still working on it...')
             }} 
-            href="" className='text-white font-medium'>details</a></h4>
+             className='px-8 py-2 rounded-[8px] border-0 border-gray-300 bg-[var(--cardbtn)]  capitalize text-center my-6'><a 
+            href="" className='text-white font-medium'>details</a></h4> 
           </div>
         </div>
           })

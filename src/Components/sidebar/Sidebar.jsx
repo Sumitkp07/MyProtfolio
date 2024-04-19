@@ -25,12 +25,12 @@ export const Sidebar = () => {
 
   return (
     <>
-      <section className="h-[100vh] lg:w-[28%] fixed border-r-4 border-[#D8B4FE]">
+      <section id="slidebar" className="h-[100vh] lg:w-[28%] lg:fixed border-r-4 border-[#D8B4FE]">
         <div className="content mx-auto my-7 w-[85%] h-[95%]">
-          <h1 className="text-[var(--textclr)] font-sans lg:text-4xl uppercase font-extrabold tracking-[2px] mb-2 md:mx-auto md:text-center md:text-5xl">
+          <h1 className="text-[var(--textclr)] font-sans text-4xl uppercase font-extrabold tracking-[2px] mb-2 md:mx-auto md:text-center md:text-5xl">
             sumit kumar
           </h1>
-          <div className="div card lg:w-[100%] lg:h-[40%] md:w-[45%] md:h-[35%] md:mx-auto">
+          <div className="divcard w-[100%] h-[40%]">
             <img
               src="./image/cover.jpg"
               alt="img"
@@ -43,13 +43,13 @@ export const Sidebar = () => {
               let's work together!
             </button>
             <div className="address my-3 flex gap-x-3 justify-center items-center">
-              <IoLocation className="text-3xl text-[var(--textclr)]" />{" "}
+              <IoLocation className="text-3xl text-[var(--svgcolor)]" />{" "}
               <span className="text-sm font-medium text-[var(--textclr)]">
                 Hno.1186,Panipat,HR-132103
               </span>
             </div>
             <div className="mail flex gap-x-3 justify-center">
-              <IoIosMail className="text-3xl text-[var(--textclr)]" />
+              <IoIosMail className="text-3xl text-[var(--svgcolor)]" />
               <span>
                 <a href="" className="text-sm font-medium text-[var(--textclr)]">
                   sumitkp333777@gmail.com
