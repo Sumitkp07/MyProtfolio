@@ -72,7 +72,7 @@ export const Projects = () => {
                   </div>
               <div className="projectoverlay-content w-[60%] h-[280px]">
                   <h1 className="mt-4 text-xl font-bold bg-purple-300 w-fit px-3 py-1 rounded-xl text-gray-800 capitalize mb-2">project1</h1>
-                  <p className='text-md mb-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, culpa officia, vel eius sed porro possimus, ipsam error itaque similique illum assumenda id odit!Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                  <p className='text-md mb-5'>It is basically a gym website in which i have used, JSX, React-concepts like Hooks for state management ,Aos animation with Useeffect hook, conditional rendering, using libraries like react-slick-slider.js and React-Icons.</p>
                   <div className="capsules flex mb-8 gap-x-5">
                   <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> Reactjs</h5>
                   <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> JSX</h5>
