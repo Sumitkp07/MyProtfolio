@@ -36,7 +36,7 @@ export const About = () => {
           </p>
           <ul className="about-btn flex gap-x-4">
           <li ><a href="./image/resume.pdf" download="resume">Check Resume <i className="fa-solid fa-arrow-right item-center"></i> </a></li>
-          <li ><Link to="project" spy={true} smooth={true}  offset={-100} duration={500}>workred on 10+ projects</Link></li>
+          <li id="aboutprobtn"><Link to="project" spy={true} smooth={true}  offset={-100} duration={500}>workred on 10+ projects</Link></li>
           </ul>
           </div>
         </div>

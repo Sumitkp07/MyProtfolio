@@ -303,7 +303,9 @@ transition: all .3s linear;
 #loader h1:nth-child(4) {
   animation-delay: 4s;
 }
-
+.project-overlay{
+  display: none;
+}
 @keyframes loader {
   0% {
     opacity: 0;
@@ -318,8 +320,6 @@ transition: all .3s linear;
     opacity: 0;
   }
 }
-
-
 /* ============= responsive ===============*/
 @media (max-width: 1025px) {
   #navbar{
@@ -513,9 +513,79 @@ transition: all .3s linear;
     align-items: center;
   }
 }
+@media screen and (max-width : 476px) {
+  #slidebar{
+    height: 70vh;
+  }
+  #aboutprobtn{
+    display: none;
+  }
+  #about{
+    height: 60vh;
+  }
+  .navlist>li, .about-btn>li {
+    padding: 2% 30%;
+  }
+  #skill{
+    height: 80vh;
+  }
+  #project h1 {
+    font-size: 1.5rem;
+  }
+  .form-wrapper {
+    height: 60vh;
+  }
+  .form-btn {
+    padding: 1vh 0;
+  }
+  #footer{
+    height: 50vh;
+  }
+}
   /* ---------------- 576px end -------------------------- */
 
 @media screen and (max-width: 400px){
-
+#slidebar{
+  height: 100vh;
+}
+.about-content > h1{
+  font-size: 2.5rem;
+}
+.about-content h1.title{
+  font-size: 1.5rem;
+}
+p.para {
+  font-size: 0.7rem;
+  width: 100%;
+}
+#aboutprobtn{
+  display: none;
+}
+.navlist>li, .about-btn>li {
+  padding: 2% 30%;
+}
+#skill{
+  height: 90vh;
+}
+.skillpara{
+  font-size: 1rem;
+  line-height: 1rem;
+}
+#project h1 {
+  font-size: 1rem;
+}
+.form-wrapper {
+  height: 75vh;
+}
+.form-btn {
+  margin-top: 2vh;
+  padding: 1.2vh 0;
+}
+#footer{
+  height: 50vh;
+}
+#footer h1 {
+  font-size: 2rem;
+}
 }
   /* ---------------- 400px end -------------------------- */

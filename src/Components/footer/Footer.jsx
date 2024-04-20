@@ -26,7 +26,7 @@ export const Footer = () => {
 
   useEffect(()=>{
     Aos.init({
-      offset: 200,
+      offset: 50,
       duration: 500,
       easing: "ease-in-sine",
       delay: 100,

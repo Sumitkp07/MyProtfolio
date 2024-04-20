@@ -23,8 +23,8 @@ export const Skills = () => {
           {
             SkillsData.map((elem,index)=>{
               return <div id={index} data-aos="fade-up" className="w-full z-10 rounded-lg bg-zinc-900 p-5 transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0_-8px_0px_var(--skillshadow)]">
-                <p className="text-white text-2xl">{elem.skill}</p>
-                <p className="text-white text-sm">{elem.percentage}</p>
+                <p className="skillpara text-white text-2xl">{elem.skill}</p>
+                <p className="skillpara text-white text-sm">{elem.percentage}</p>
                 <img className="hover:opacity-100 absolute right-[10%] h-16 top-[50%] translate-y-[-50%] opacity-70 transition hover:scale-110 duration-300" src={elem.image} alt=""/></div>
             })
           }

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { ProjectData } from './ProjectData';
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import { Modal } from './Modal';
 
 
 export const Projects = () => {
@@ -16,6 +17,7 @@ export const Projects = () => {
   })
   return (
     <section >
+      <Modal/>
       <div id="project" className="wrapper min-h-[100vh]">
       <h1 data-aos="fade-up" className="text-7xl font-extrabold uppercase text-[var(--headings)] border-b-2 pb-5 border-[var(--border)]">check out <br /> my projects work</h1>
       <div className="project-cards grid lg:grid-cols-3 lg:gap-6 gap-8 md:grid-cols-2 mt-[10vh]">
@@ -39,7 +41,6 @@ export const Projects = () => {
             </div>
             <h4 id='details-btn'
             onClick={()=>{
-              alert('still working on it...')
             }} 
              className='px-8 py-2 rounded-[8px] border-0 border-gray-300 bg-[var(--cardbtn)]  capitalize text-center my-6'><a 
             href="" className='text-white font-medium'>details</a></h4> 
