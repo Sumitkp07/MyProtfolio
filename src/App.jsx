@@ -11,20 +11,20 @@ import {Footer} from './Components/footer/Footer';
 
 function App() {
 
-  const loader = () => {
-    setTimeout(() => {
-      document.getElementById('loader').style.top='-100%'
-    }, 4500);
-  }
-  useEffect(()=>{
-    loader();
-  })
+  // const loader = () => {
+  //   setTimeout(() => {
+  //     document.getElementById('loader').style.top='-100%'
+  //   }, 4500);
+  // }
+  // useEffect(()=>{
+  //   loader();
+  // },[])
 
   return (
     <>
-    <div id="loader">
+    {/* <div id="loader">
       <h1>welcome</h1> <h1>to</h1> <h1>myportfolio</h1> <h1>website...</h1>
-    </div>
+    </div> */}
     <Navbar />
     <Sidebar/>
     <About />

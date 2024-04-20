@@ -303,9 +303,9 @@ transition: all .3s linear;
 #loader h1:nth-child(4) {
   animation-delay: 4s;
 }
-.project-overlay{
+/* .project-overlay{
   display: none;
-}
+} */
 @keyframes loader {
   0% {
     opacity: 0;
