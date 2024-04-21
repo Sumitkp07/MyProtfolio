@@ -19,7 +19,7 @@ export const Projects = () => {
     });
   })
   const modalFunc = (contents)=>{
-    setModalContent([contents]);
+    setModalContent([contents])
     setShowModal(true)
   }
 
@@ -61,9 +61,8 @@ export const Projects = () => {
       </div>
       </div>
       {/* ======================================================== */}
-     {showModal && <div className="project-overlay bg-black flex justify-center items-center w-[100%] h-[100%] fixed top-0 right-0 z-50">
-
-          <div className="content-box w-[70vw] h-[300px] overflow-hidden bg-neutral-100 rounded-xl flex justify-between items-center px-5 relative shadow-2xl shadow-zinc-500">
+     {showModal && <div data-aos="zoom-in" className="project-overlay backdrop-blur-[25px] flex justify-center items-center w-[100%] h-[100%] fixed top-0 right-0 z-50">
+     <div className="content-box w-[70vw] h-[300px] overflow-hidden bg-neutral-100 rounded-xl flex justify-between items-center px-5 relative shadow-2xl shadow-zinc-500">
               <div className="img h-[250px] w-[350px]">
                   <img 
                   className='w-full h-full bg-cover bg-center'
@@ -71,7 +70,7 @@ export const Projects = () => {
                   alt="" />
                   </div>
               <div className="projectoverlay-content w-[60%] h-[280px]">
-                  <h1 className="mt-4 text-xl font-bold bg-purple-300 w-fit px-3 py-1 rounded-xl text-gray-800 capitalize mb-2">project1</h1>
+                  <h1 className="mt-4 text-xl font-bold bg-purple-300 w-fit px-3 py-1 rounded-xl text-gray-800 capitalize mb-2">FitnessFreak</h1>
                   <p className='text-md mb-5'>It is basically a gym website in which i have used, JSX, React-concepts like Hooks for state management ,Aos animation with Useeffect hook, conditional rendering, using libraries like react-slick-slider.js and React-Icons.</p>
                   <div className="capsules flex mb-8 gap-x-5">
                   <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> Reactjs</h5>
@@ -82,7 +81,7 @@ export const Projects = () => {
                   <div className="projectoverlay-btn flex gap-4">
                       <div className="livebtn"><a href="" className='bg-zinc-900 text-[var(--textclr)] 
                       px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Live Link</a></div>
-                      <div className="guthubbtn"><a href="" className='bg-zinc-900 text-[var(--textclr)] 
+                      <div className="guthubbtn"><a href="https://github.com/Sumitkp07/Fitness-Freak" className='bg-zinc-900 text-[var(--textclr)] 
                       px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Github</a></div>
                   </div>
               </div>

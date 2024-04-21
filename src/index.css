@@ -72,6 +72,15 @@
 /* ------- darkmode svg and top arrow -------- */
 .mode{
   padding: 8px;
+  animation: mode 1.2s infinite alternate-reverse linear;
+}
+@keyframes mode {
+  0%{
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(1.15);
+  }
 }
 .topArrow{
   padding: 5px;
