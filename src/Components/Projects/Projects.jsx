@@ -39,7 +39,7 @@ export const Projects = () => {
           className='h-full w-full hover:scale-[1.03] transition-all duration-200 ease-linear bg-cover bg-center'
           />
           </div>
-          <div className="card-content  ">
+          <div className="card-content">
             <h1 className="mt-4 text-xl font-bold bg-purple-200 w-fit px-3 py-1 rounded-xl text-gray-800" >{elem.projectName}</h1>
             <div className="capsule flex items-center justify-start gap-x-3 mt-4 flex-wrap py-2">
               <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-100 px-2 py-0.5 my-1 text-xs text-purple-600">{elem.lang1}</h5>
@@ -62,7 +62,7 @@ export const Projects = () => {
       </div>
       {/* ======================================================== */}
      {showModal && <div data-aos="zoom-in" className="project-overlay backdrop-blur-[25px] flex justify-center items-center w-[100%] h-[100%] fixed top-0 right-0 z-50">
-     <div className="content-box w-[70vw] h-[300px] overflow-hidden bg-neutral-100 rounded-xl flex justify-between items-center px-5 relative shadow-2xl shadow-zinc-500">
+     <div className="content-box w-[70vw] overflow-hidden bg-neutral-100 rounded-xl flex justify-between items-center p-14 relative shadow-2xl shadow-zinc-500">
               <div className="img h-[250px] w-[350px]">
                   <img 
                   className='w-full h-full bg-cover bg-center'

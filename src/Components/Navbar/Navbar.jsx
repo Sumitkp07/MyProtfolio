@@ -30,11 +30,11 @@ export const Navbar = () => {
   return (
     <>
       <div
-        className="w-full fixed top-0 right-0 z-50"
+        className="w-full fixed top-0 right-0 z-50 "
       >
         <nav id="navbar" className="lg:px-[2vw] lg:py-[3vh]">
           <ul className="navlist flex gap-x-8 items-center justify-end">
-            <li>
+            <li id="list">
               <Link
                 to="about"
                 spy={true}
@@ -94,7 +94,7 @@ export const Navbar = () => {
 
         {showMenu && (
           <div
-            className="overlay h-[100%] backdrop-blur-[40px] w-full fixed z-10 top-0 right-[0%]"
+            className="overlay h-[100%] backdrop-blur-[40px] w-full fixed z-10 top-0 transition-all duration-300 ease-linear"
             id="myNav"
           >
             <a
@@ -103,7 +103,6 @@ export const Navbar = () => {
               id="xmark"
               onClick={() => {
                 setshowMenu(!showMenu);
-                document.getElementById('myNav').style.right="-100%"
               }}
             >
               &times;
@@ -115,30 +114,45 @@ export const Navbar = () => {
             >
               <Link
                 to="#"
+                onClick={() => {
+                  setshowMenu(!showMenu);
+                }}
                 className="text-2xl text-gray-300 block capitalize text-center mb-5"
               >
                 About
               </Link>
               <Link
                 to="skill"
+                onClick={() => {
+                  setshowMenu(!showMenu);
+                }}
                 className="text-2xl text-gray-300 block capitalize text-center mb-5"
               >
                 Skills
               </Link>
               <Link
                 to="project"
+                onClick={() => {
+                  setshowMenu(!showMenu);
+                }}
                 className="text-2xl text-gray-300 block capitalize text-center mb-5"
               >
                 Projects
               </Link>
               <Link
                 to="education"
+                onClick={() => {
+                  setshowMenu(!showMenu);
+                }}
                 className="text-2xl text-gray-300 block capitalize text-center mb-5"
               >
                 Education
               </Link>
               <Link
                 to="social"
+                onClick={() => {
+                  setshowMenu(!showMenu);
+                }}
                 className="text-2xl text-gray-300 block capitalize text-center mb-5"
               >
                 Login

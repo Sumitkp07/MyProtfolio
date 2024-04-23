@@ -25,11 +25,11 @@ export const Sidebar = () => {
 
   return (
     <>
-      <section id="slidebar" className="h-[100vh] lg:w-[28%] xl:fixed border-r-4 border-[#D8B4FE]">
+      <section id="slidebar" className="h-[100vh] lg:w-[28%] xl:fixed border-r-4 border-[var(--border)]">
         <div className="content mx-auto my-7 w-[85%] h-[95%]">
           <div className="divcard w-[100%] h-[40%]">
           <h1 className="text-[var(--textclr)] font-sans uppercase font-extrabold tracking-[2px] mb-2 md:mx-auto md:text-center text-4xl">
-            sumit kumar
+            sumit <span className="text-violet-800">kumar</span> 
           </h1>
             <img
               src="./image/cover.jpg"

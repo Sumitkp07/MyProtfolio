@@ -6,12 +6,12 @@
 /* ********* ROOT STYLING ************* */
 
 .light-theme {
-  background-color: #e6d9c6;
+  background-color: #e7e3dc;
   --headings: #5b0daf;
   --subheading: #8242d6;
   --textclr : #000;
   --paragraph :#050505e5;
-  --border : #19191a;
+  --border : #1b1b1b;
   --skillshadow : #d554f8;
   --cardbtn :#882bdf;
   --cardbtnhov :#c4a1e6;
@@ -330,18 +330,25 @@ transition: all .3s linear;
   }
 }
 /* ============= responsive ===============*/
-@media (max-width: 1025px) {
+
+@media screen and (min-width: 1024px){
+  #slidebar{
+    position: fixed;
+  }
+  .wrapper {
+    width: 68%;
+    float: right;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
   #navbar{
-    display: none;
+    display: block;
   }
     .menubar{
-      display: block;
+      display: none;
     }
-    .wrapper{
-      width: 90%;
-      margin: auto;
-      float: none;
-      
+    #skill{
+      height: 100vh;
     }
 }
 
@@ -470,6 +477,15 @@ transition: all .3s linear;
     left: 1%;
     bottom: 2%;
   }
+  .project-overlay .content-box{
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    padding:10% 0;
+  }
+  .projectoverlay-content{
+    width: 68%;
+  }
 }
   /* ---------------- 768px end -------------------------- */
 
@@ -521,6 +537,32 @@ transition: all .3s linear;
     justify-content: center;
     align-items: center;
   }
+  #loader h1 {
+    background: var(--lineargrdient);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+    opacity: 0;
+    animation-name: loader;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+  }
+  .project-overlay .content-box{
+    padding:15% 0;
+  }
+  .projectoverlay-content{
+    width: 90%;
+  }
+  .content-box .img{
+    width:260px;
+  }
+
 }
 @media screen and (max-width : 476px) {
   #slidebar{
@@ -555,7 +597,10 @@ transition: all .3s linear;
 
 @media screen and (max-width: 400px){
 #slidebar{
-  height: 100vh;
+  height: 95vh;
+}
+#about{
+  height: 75vh;
 }
 .about-content > h1{
   font-size: 2.5rem;
@@ -580,7 +625,10 @@ p.para {
   font-size: 1rem;
   line-height: 1rem;
 }
-#project h1 {
+#project>h1 {
+  font-size: 2.5rem;
+}
+.card-content h1{
   font-size: 1rem;
 }
 .form-wrapper {
@@ -595,6 +643,9 @@ p.para {
 }
 #footer h1 {
   font-size: 2rem;
+}
+#loader h1 {
+  font-size: 2.5rem;
 }
 }
   /* ---------------- 400px end -------------------------- */
