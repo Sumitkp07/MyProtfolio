@@ -6,6 +6,7 @@
 /* ********* ROOT STYLING ************* */
 
 .light-theme {
+  transition: all .3s linear;
   background-color: #e7e3dc;
   --headings: #5b0daf;
   --subheading: #8242d6;
@@ -15,7 +16,7 @@
   --skillshadow : #d554f8;
   --cardbtn :#882bdf;
   --cardbtnhov :#c4a1e6;
-  --cardbg : #09090b;
+  --cardbg : #18181B;
   --svgcolor:#882bdf;
   --socialbg:#000;
   --capsule: #e9d5ff;
@@ -28,6 +29,7 @@
   --hovergradient:#882bdf;
 }
 .dark-theme{
+  transition: all .3s linear;
   background-color: black;
   --headings: #d8b4fe;
   --subheading: #6614b3;
@@ -421,6 +423,17 @@ transition: all .3s linear;
     left: 8px;
     bottom:2%;
   }
+  .project-overlay .content-box{
+    flex-direction: column;
+    width:50vw;
+    padding: 20px;
+  }
+  .content-box .img{
+    width: 100%;
+  }
+  .projectoverlay-content{
+    width: 100%;
+  }
 }
   /* ---------------- 1024px end -------------------------- */
 
@@ -477,15 +490,13 @@ transition: all .3s linear;
     left: 1%;
     bottom: 2%;
   }
-  .project-overlay .content-box{
-    height: 90vh;
-    flex-direction: column;
-    justify-content: center;
-    padding:10% 0;
-  }
-  .projectoverlay-content{
-    width: 68%;
-  }
+  .content-box{
+    justify-content: space-evenly;
+    width: 95vw !important;
+    height: 90vh !important;
+}
+
+
 }
   /* ---------------- 768px end -------------------------- */
 
@@ -553,16 +564,6 @@ transition: all .3s linear;
     animation-delay: 1s;
     animation-timing-function: linear;
   }
-  .project-overlay .content-box{
-    padding:15% 0;
-  }
-  .projectoverlay-content{
-    width: 90%;
-  }
-  .content-box .img{
-    width:260px;
-  }
-
 }
 @media screen and (max-width : 476px) {
   #slidebar{

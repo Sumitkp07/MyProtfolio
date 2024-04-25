@@ -62,35 +62,39 @@ export const Projects = () => {
       </div>
       {/* ======================================================== */}
      {showModal && <div data-aos="zoom-in" className="project-overlay backdrop-blur-[25px] flex justify-center items-center w-[100%] h-[100%] fixed top-0 right-0 z-50">
-     <div className="content-box w-[70vw] overflow-hidden bg-neutral-100 rounded-xl flex justify-between items-center p-14 relative shadow-2xl shadow-zinc-500">
-              <div className="img h-[250px] w-[350px]">
-                  <img 
-                  className='w-full h-full bg-cover bg-center'
-                  src="./image/project1.png"
-                  alt="" />
-                  </div>
-              <div className="projectoverlay-content w-[60%] h-[280px]">
-                  <h1 className="mt-4 text-xl font-bold bg-purple-300 w-fit px-3 py-1 rounded-xl text-gray-800 capitalize mb-2">FitnessFreak</h1>
-                  <p className='text-md mb-5'>It is basically a gym website in which i have used, JSX, React-concepts like Hooks for state management ,Aos animation with Useeffect hook, conditional rendering, using libraries like react-slick-slider.js and React-Icons.</p>
-                  <div className="capsules flex mb-8 gap-x-5">
-                  <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> Reactjs</h5>
-                  <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> JSX</h5>
-                  <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> Tailwindcss</h5>
-                  <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black">Javascript</h5>
-                  </div>
-                  <div className="projectoverlay-btn flex gap-4">
-                      <div className="livebtn"><a href="" className='bg-zinc-900 text-[var(--textclr)] 
-                      px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Live Link</a></div>
-                      <div className="guthubbtn"><a href="https://github.com/Sumitkp07/Fitness-Freak" className='bg-zinc-900 text-[var(--textclr)] 
-                      px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Github</a></div>
-                  </div>
-              </div>
-          <span 
-          onClick={()=>{
-            setShowModal(false)
-          }} 
-          className='text-white text-sm absolute top-2 right-4 bg-black px-3 py-2 rounded-[50%] cursor-pointer'> <i class="fa-solid fa-xmark"></i></span>
+ {
+  modalContent.map((pop)=>{
+      return <div className="content-box w-[70vw] overflow-hidden bg-neutral-100 rounded-xl flex justify-between items-center p-5 relative shadow-2xl shadow-zinc-500">
+      <div className="img h-[250px] w-[350px]">
+          <img 
+          className='w-full h-full bg-cover bg-center'
+          src={pop.img}
+          alt="" />
           </div>
+      <div className="projectoverlay-content w-[60%] h-[300px] mx-5">
+          <h1 className="mt-4 text-xl font-bold bg-purple-300 w-fit px-3 py-1 rounded-xl text-gray-800 capitalize mb-2">{pop.projectName}</h1>
+          <p className='text-md mb-5'>{pop.para}</p>
+          <div className="capsules flex mb-8 gap-x-5">
+          <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> {pop.lang1}</h5>
+          <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black">{pop.lang2} </h5>
+          <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black"> {pop.lang3}</h5>
+          <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black">{pop.lang4}</h5>
+          </div>
+          <div className="projectoverlay-btn flex gap-4">
+              <div className="livebtn"><a href="" className='bg-zinc-900 text-[var(--textclr)] 
+              px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Live Link</a></div>
+              <div className="guthubbtn"><a href="https://github.com/Sumitkp07/Fitness-Freak" className='bg-zinc-900 text-[var(--textclr)] 
+              px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Github</a></div>
+          </div>
+      </div>
+  <span 
+  onClick={()=>{
+    setShowModal(false)
+  }} 
+  className='text-white text-sm absolute top-2 right-4 bg-black px-3 py-2 rounded-[50%] cursor-pointer'> <i class="fa-solid fa-xmark"></i></span>
+  </div>
+  })
+ }
         </div>}
 
       {/* ======================================================== */}
