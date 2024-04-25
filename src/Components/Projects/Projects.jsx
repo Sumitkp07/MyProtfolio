@@ -81,9 +81,9 @@ export const Projects = () => {
           <h5 className="whitespace-nowrap rounded-full h-fit bg-purple-200 px-2 py-0.5 my-1 text-sm text-black">{pop.lang4}</h5>
           </div>
           <div className="projectoverlay-btn flex gap-4">
-              <div className="livebtn"><a href="" className='bg-zinc-900 text-[var(--textclr)] 
+              <div className="livebtn"><a href={pop.livelink} className='bg-zinc-900 text-[var(--textclr)] 
               px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Live Link</a></div>
-              <div className="guthubbtn"><a href="https://github.com/Sumitkp07/Fitness-Freak" className='bg-zinc-900 text-[var(--textclr)] 
+              <div className="guthubbtn"><a href={pop.git} className='bg-zinc-900 text-[var(--textclr)] 
               px-8 py-3 text-sm rounded-md hover:bg-violet-500 transition-all duration-300'>Github</a></div>
           </div>
       </div>
